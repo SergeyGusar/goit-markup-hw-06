@@ -305,7 +305,7 @@ color: var(--secondary-color);
   cursor: pointer;
 }
 .form-element label {
-  margin-top: 4px;
+  padding-top: 10px;
   font-weight: 400;
 font-size: 12px;
 line-height: 1.16px;
@@ -314,12 +314,25 @@ letter-spacing: 0.01em;
 color: var(--primary-color);
 
 }
+.accept label {
+  display: contents;
+  font-weight: 400;
+font-size: 14px;
+line-height: 1.71px;
+letter-spacing: 0.03em;
+
+color: var(--primary-color);
+
+
+}
 .input-wrap {
   position: relative;
+  padding-top: 4px;
 }
+
 .form-element svg {
   position: absolute;
-  top: 25px;
+  top: 28px;
   left: 12px;
   transform: translateY(-50%);
  
@@ -346,7 +359,9 @@ color: var(--primary-color);
   height: 138px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+margin-top: 10px;
 }
+
 .placeholder {
   font-weight: 400;
 font-size: 12px;
@@ -355,6 +370,29 @@ letter-spacing: 0.01em;
 
 color: rgba(117, 117, 117, 0.5);
 }
+.accept {
+  display: flex;
+  margin-top: 25px;
+  
+
+}
+ .checkbox-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  
+  
+  background: #ffffff;
+border: 0.2px solid #212121;
+}
+.accept input:checked + .checkbox-btn {
+  background: var(--accent-color);
+  border: 0.2px solid #FFFFFF;
+}
+
 
 
 .hero-title {
