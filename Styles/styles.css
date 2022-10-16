@@ -840,7 +840,7 @@ li {
 }
 .mailing-wrap {
   display: flex;
- align-items: baseline;
+  align-items: baseline;
 }
 
 .mailing-list input::placeholder {
@@ -888,9 +888,9 @@ li {
 .mailing-btn-text {
   font-weight: 700;
   font-size: 16px;
-line-height: 1.88px;
-letter-spacing: 0.06em;
-margin-left: 28px;
+  line-height: 1.88px;
+  letter-spacing: 0.06em;
+  margin-left: 28px;
 }
 .icon-send {
   margin-left: 10px;
