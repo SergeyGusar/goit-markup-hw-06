@@ -484,6 +484,18 @@
             </li>
           </ul>
         </div>
+        <form class="mailing-list">
+          <p class="mailing-text">Підпишіться на розсилку</p>
+          <div class="mailing-wrap">
+            <label for="mailing">
+            <input type="mailing" name="mailing" id="mailing" placeholder="E-mail"></label>
+            <button class="mailing-btn" type="submit">Підписатися
+            <svg class="icon-send" width="24" height="24">
+              <use href="./studioimg/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </button>
+          </div>
+        </form>
       </div>
     </section>
     <!-- Modal -->
@@ -525,16 +537,18 @@
           </div>
           <div class="form-element">
             <label for="textarea">Коментар</label>
-            <textarea name="textarea" id="textarea" cols="30" rows="20" placeholder="Введіть текст"></textarea>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"  placeholder="Введіть текст"></textarea>
           </div>
            <div class="accept">
+            <label for="accept">
           <input type="checkbox" name="accept" id="accept" class="visually-hidden">
           <div class="checkbox-btn">
             <svg width="11" height="8">
               <use href="./studioimg/symbol-defs.svg#icon-Vector"></use>
             </svg>
           </div>
-          <label for="accept">Погоджуюся з розсилкою та приймаю Умови договору</label>
+          <div class="agree"><p>Погоджуюся з розсилкою та приймаю</p><span><a class="agree-link" href="">Умови договору</a></span></div>
+          </label>
         </div>
         <button class="submit-modal submit-text" type="submit">Відправити</button>
           </form>
