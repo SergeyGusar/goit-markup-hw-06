@@ -197,17 +197,17 @@ li {
   cursor: pointer;
 }
 .hero-button {
-  background: var(--accent-color);
-  color: var(--text-color);
+  display: flex;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.99;
   letter-spacing: 0.06em;
-  display: flex;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   margin: 0 auto;
   padding: 10px 32px;
+  background: var(--accent-color);
+  color: var(--text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-section .button:focus,
@@ -835,7 +835,6 @@ li {
 }
 /* Підпишіться на розсилку */
 .mailing-list {
-  /* display: flex; */
   margin-left: 93px;
 }
 .mailing-wrap {
@@ -844,12 +843,11 @@ li {
 }
 
 .mailing-list input::placeholder {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25px;
-
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
@@ -867,12 +865,15 @@ li {
   width: 358px;
   height: 50px;
   margin-top: 20px;
+  padding-left: 16px;
+  color: var(--text-color);
   background: var(--footer-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   cursor: pointer;
 }
+
 .mailing-btn {
   width: 200px;
   height: 50px;
