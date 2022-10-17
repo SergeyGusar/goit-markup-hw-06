@@ -339,6 +339,9 @@ li {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition-property: border,fill, svg;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-element input:focus {
   border: 1px solid var(--accent-color);
@@ -347,55 +350,64 @@ li {
   fill: var(--accent-color);
 }
 .form-element textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7px;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
   height: 138px;
+  /* color: rgba(117, 117, 117, 0.5); */
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 10px;
+  resize: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-element textarea:focus {
   outline: none;
   border: 1px solid var(--accent-color);
 }
 
-.placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
-}
 .accept {
   display: flex;
+  justify-content: center;
   margin-top: 25px;
+
 }
 .checkbox-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 16px;
   height: 15px;
   margin-right: 7px;
-
-  background: #ffffff;
-  border: 0.2px solid #212121;
+  cursor: pointer;
+  border: 1.5px solid  var(--secondary-color);
+  border-radius: 2px;
+  transition-property: background,border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accept input:checked + .checkbox-btn {
   background: var(--accent-color);
-  border: 0.2px solid #ffffff;
-  justify-content: center;
+  border: 0.2px solid var(--accent-color)
+ 
 }
 .agree {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
-
   letter-spacing: 0.03em;
 }
 .agree-link {
+  margin-left: 5px;
   text-decoration-line: underline;
   color: #2196f3;
 }
@@ -416,8 +428,8 @@ li {
   height: 50px;
   margin: 30px auto;
   background-color: var(--accent-color);
-
   border-radius: 4px;
+
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -833,7 +845,9 @@ li {
 .footer-icon-link:hover {
   background-color: var(--accent-color);
 }
+
 /* Підпишіться на розсилку */
+
 .mailing-list {
   margin-left: 93px;
 }
@@ -852,6 +866,8 @@ li {
 
   color: rgba(255, 255, 255, 0.6);
 }
+
+
 .mailing-text {
   font-weight: 700;
   font-size: 14px;
@@ -862,16 +878,23 @@ li {
   color: var(--text-color);
 }
 .mailing-wrap input {
+  cursor: pointer;
+  outline: none;
   width: 358px;
   height: 50px;
   margin-top: 20px;
   padding-left: 16px;
   color: var(--text-color);
   background: var(--footer-color);
+  border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  cursor: pointer;
+  transition-property: drop-shadow, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mailing-wrap  input:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .mailing-btn {
