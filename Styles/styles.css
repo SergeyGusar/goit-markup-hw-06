@@ -76,6 +76,9 @@ li {
 .header-page {
   border-bottom: 1px solid var(--header-border-bottom);
 }
+.header-page {
+  background: var(--text-color);
+}
 
 .container {
   display: flex;
@@ -86,9 +89,7 @@ li {
   padding-right: 15px;
   /* margin: 0 auto; */
 }
-.header-page {
-  background: var(--text-color);
-}
+
 
 /* Logo header */
 
