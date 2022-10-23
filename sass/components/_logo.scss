@@ -1,10 +1,10 @@
 /* Logo header */
 
-.logo-web {
+.logo__web {
     color: var(--accent-color);
   }
   
-  .logo-header {
+  .logo__header {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -17,16 +17,12 @@
     margin-left: 93px;
   }
   
-  .logo-header:focus {
+  &-:focus {
     color: var(--accent-color);
   }
 //   Logo-Footer
-
-  .logo-web {
-    color: var(--accent-color);
-  }
   
-  .logo-footer {
+  .logo__footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
