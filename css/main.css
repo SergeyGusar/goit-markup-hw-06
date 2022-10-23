@@ -23,7 +23,7 @@
   --footer-icon-link: rgba(255, 255, 255, 0.1);
   --input-placeholder: rgba(255, 255, 255, 0.6);
   --background-overlay-text: rgba(33, 150, 243, 0.9);
-  --porfolio-text-border: #eeeeee;
+  --portfolio-text-border: #eeeeee;
 }
 
 h1,
@@ -559,16 +559,30 @@ body {
   border-radius: 2px;
 }
 
-.contacts-link {
+.contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
   justify-items: center;
 }
-
-.contacts-list {
+.contacts .contacts__list {
   margin-right: 50px;
   padding: 32px 0;
+}
+.contacts .contacts__link {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-left: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts .contacts__link:hover,
+.contacts .contacts__link:focus {
+  color: var(--accent-color);
 }
 
 .icon-envelope {
@@ -583,23 +597,6 @@ body {
   margin-right: 10px;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.contacts-link .link {
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-color);
-  text-decoration: none;
-  margin-left: auto;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-link .link:hover,
-.contacts-link .link:focus {
-  color: var(--accent-color);
 }
 
 /* advantages-переваги */
@@ -1148,7 +1145,7 @@ body {
 .porfolio-text {
   padding: 20px 24px 20px 24px;
   border-radius: 0px 0px 4px 4px;
-  border: 1px solid var(--porfolio-text-border);
+  border: 1px solid var(--portfolio-text-border);
   border-top: 0;
 }
 
