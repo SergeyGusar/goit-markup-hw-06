@@ -1,12 +1,15 @@
+// Base
 @import './utils/variables';
 @import './base/normalize';
 @import './base/fonts';
 @import './base/common';
+
+// Section
 @import './components/hero';
-@import './components/modal';
 @import './components/buttons';
 @import './components/logo';
 @import './components/nav-link';
+@import './components/contacts';
 @import './components/advantages';
 @import './components/we-do';
 @import './components/team';
@@ -14,7 +17,12 @@
 @import './components/footer';
 @import './components/address';
 @import './components/subscribe';
+
+// Portfolio
 @import './components/projeckt-portfolio';
+
+// Modal
+@import './components/modal';
 
 
 
